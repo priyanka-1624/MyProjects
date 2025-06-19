@@ -24,12 +24,16 @@ This project shows how to build a .NET web application using Docker and deploy i
 ## 🔧 Steps to Run
 
 1. **Build and Push Docker Image**
-docker build -t <your-dockerhub-username>/<image-name>:v1 .
-docker push <your-dockerhub-username>/<image-name>:v1
+docker build -t kube-dotnet:latest .
 
-2. **Apply Kubernetes Files**
+docker tag kube-dotnet:latest priya1624/kube-dotnet:latest 
+
+docker push priya1624/kube-dotnet:latest
+
+3. **Apply Kubernetes Files**
 
 kubectl apply -f deploy.yaml
+
 kubectl apply -f service.yaml
 
 3. **Access the App**
