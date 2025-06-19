@@ -54,9 +54,4 @@ Special thanks to my mentors at **Software Gurukulam** for their support and gui
 ![output](https://github.com/user-attachments/assets/813a222b-311b-4901-91b3-274b315eb2ba)
 
 
----
 
-```
-
-Let me know if you'd like a version with clickable Docker Hub or LinkedIn links!
-```
