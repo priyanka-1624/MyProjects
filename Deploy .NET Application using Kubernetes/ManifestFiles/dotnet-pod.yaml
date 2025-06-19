@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mf-dotnet-pod
+  labels:
+    app: dotnetimage
+spec:
+  containers:
+    - name: dotnet-pod
+      image: priya1624/kube-dotnet:latest

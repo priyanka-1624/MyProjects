@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dotnet-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dotnetimage
+  template:
+    metadata:
+      labels:
+        app: dotnetimage
+    spec:
+      containers:
+      - name: dotnet-deploy01
+        image: priya1624/kube-dotnet:latest
+        ports:
+        - containerPort: 8080
+
